@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>DOM ( DOCUMENT-OBJECT MODEL ) basics</h1>
+    <button>click me</button>
+  </body>
+  <script>
+    const button = document.querySelector("button");
+    const h1 = document.querySelector("h1");
+
+    console.log(button);
+    //                              callback function
+    button.addEventListener("click", function () {
+      //console.log("CLICKED");
+      //alert("CLICKED");
+      h1.innerText = new Date();
+    });
+    // click
+    // double-clicking
+    // scrolling
+    // keydown
+    // keyup
+  </script>
+</html>
